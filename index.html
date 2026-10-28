@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kisah Karier Alyssa Ananta</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Latar & efek -->
+  <div class="scene"><i></i><i></i><i></i></div>
+  <canvas id="bg"></canvas>
+  <div class="glow" id="glow"></div>
+  <canvas id="fx"></canvas>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="br">
+      <div class="logo">A</div>
+      <span class="lab hd">Kisah Karier Alyssa Ananta</span>
+    </div>
+    <div class="br">
+      <button class="ib lab mus" id="mus" aria-label="Putar lagu" aria-pressed="false" title="Putar / jeda lagu">
+        <span class="eq"><i></i><i></i><i></i></span> Lagu
+      </button>
+      <button class="ib" id="thm" aria-label="Mode gelap">☾</button>
+      <button class="ib lab" id="tocb">☰ Daftar Isi</button>
+    </div>
+  </header>
+
+  <!-- Buku -->
+  <main>
+    <div class="book" id="book">
+      <div class="inner">
+        <div class="page l" id="L"></div>
+        <div class="page r" id="R"></div>
+        <div class="rib" id="rib"></div>
+      </div>
+      <div class="cover" id="cover" tabindex="0" role="button" aria-label="Buka buku">
+        <div class="cf">
+          <span class="lab">Catatan Perjalanan</span>
+          <h1>Jejak Langkah Alyssa</h1>
+          <i>Dari layar kecil menuju panggung besar</i>
+          <span class="lab">2020 — 2026</span>
+          <span class="lab hint">Buka sampul untuk membaca</span>
+        </div>
+        <div class="cb"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer / navigasi -->
+  <footer class="foot" id="foot">
+    <button id="prev">‹ Sebelumnya</button>
+    <div class="cn">
+      <div class="t" id="cnt"></div>
+      <div class="pb"><i id="bar"></i></div>
+    </div>
+    <button id="next">Selanjutnya ›</button>
+  </footer>
+
+  <div class="drw" id="drw"><div class="toc" id="tocl"></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <input type="file" id="file" accept="image/*" hidden>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
